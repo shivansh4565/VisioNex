@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch and Data
+data/cifar-10-batches-py/
+data/cifar-10-python.tar.gz
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+.env

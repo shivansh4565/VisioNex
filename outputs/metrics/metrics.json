@@ -1,0 +1,102 @@
+{
+    "model": "VisionCore CNN",
+    "checkpoint": "C:\\Users\\shiva\\Downloads\\cnn project'\\models\\best_cifar10_cnn.pth",
+    "test_samples": 10000,
+    "test_accuracy": 81.12,
+    "macro_precision": 81.2483,
+    "weighted_precision": 81.2483,
+    "macro_recall": 81.12,
+    "weighted_recall": 81.12,
+    "macro_f1": 80.8261,
+    "weighted_f1": 80.8261,
+    "per_class_accuracy": [
+        {
+            "Class Index": 0,
+            "Class Name": "airplane",
+            "Total Samples": 1000,
+            "Correct Predictions": 857,
+            "Accuracy (%)": 85.7
+        },
+        {
+            "Class Index": 1,
+            "Class Name": "automobile",
+            "Total Samples": 1000,
+            "Correct Predictions": 933,
+            "Accuracy (%)": 93.3
+        },
+        {
+            "Class Index": 2,
+            "Class Name": "bird",
+            "Total Samples": 1000,
+            "Correct Predictions": 676,
+            "Accuracy (%)": 67.6
+        },
+        {
+            "Class Index": 3,
+            "Class Name": "cat",
+            "Total Samples": 1000,
+            "Correct Predictions": 532,
+            "Accuracy (%)": 53.2
+        },
+        {
+            "Class Index": 4,
+            "Class Name": "deer",
+            "Total Samples": 1000,
+            "Correct Predictions": 783,
+            "Accuracy (%)": 78.3
+        },
+        {
+            "Class Index": 5,
+            "Class Name": "dog",
+            "Total Samples": 1000,
+            "Correct Predictions": 793,
+            "Accuracy (%)": 79.3
+        },
+        {
+            "Class Index": 6,
+            "Class Name": "frog",
+            "Total Samples": 1000,
+            "Correct Predictions": 912,
+            "Accuracy (%)": 91.2
+        },
+        {
+            "Class Index": 7,
+            "Class Name": "horse",
+            "Total Samples": 1000,
+            "Correct Predictions": 839,
+            "Accuracy (%)": 83.9
+        },
+        {
+            "Class Index": 8,
+            "Class Name": "ship",
+            "Total Samples": 1000,
+            "Correct Predictions": 920,
+            "Accuracy (%)": 92.0
+        },
+        {
+            "Class Index": 9,
+            "Class Name": "truck",
+            "Total Samples": 1000,
+            "Correct Predictions": 867,
+            "Accuracy (%)": 86.7
+        }
+    ],
+    "ann_comparison": [
+        {
+            "Model": "Baseline ANN",
+            "Architecture": "3-Layer MLP (Flatten -> Linear 1024 -> Linear 512 -> Linear 10)",
+            "Train Accuracy (%)": 44.93,
+            "Val Accuracy (%)": 51.52,
+            "Test Accuracy (%)": 51.04,
+            "Macro F1 (%)": 50.34
+        },
+        {
+            "Model": "VisionCore CNN",
+            "Architecture": "3-Stage ConvNet (Conv-BN-ReLU x2 + MaxPool + Dropout)",
+            "Train Accuracy (%)": 73.0,
+            "Val Accuracy (%)": 81.56,
+            "Test Accuracy (%)": 81.12,
+            "Macro F1 (%)": 80.83
+        }
+    ]
+}
